@@ -1,0 +1,444 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('img/background.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    min-height: 8vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    padding-top: 10px;
+    padding-left: 60px;
+}
+
+.logo img {
+    width: 120px;
+}
+
+.logo {
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+.join a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+
+}
+
+.join {
+    border: #FBB142 solid;
+    padding: 15px 65px 15px 65px;
+    border-radius: 70px;
+    background-color: #FBB142;
+    margin: 20px;
+    box-shadow: 10px 10px 15px black ;
+}
+
+.join a:hover {
+    font-size: 28px;
+    transition: .3s;
+}
+
+.nav-links a:hover {
+    color: orangered;
+    transition: .4s;
+    font-size: 26px;
+}
+
+.nav-links .active {
+    color: orangered;
+}
+.burger {
+    padding-bottom: 55px;
+    padding-right: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
+    height: 3.5px;
+    width: 28px;
+    margin: 5px;
+    border-radius: 6px;
+}
+
+
+.cancel {
+    padding-bottom: 55px;
+    padding-right: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+.cancel div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
+    height: 3.5px;
+    width: 28px;
+    margin: -3px;
+    border-radius: 6px;
+}
+
+
+.countdowndivs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 800px;
+    margin-top: -35px;
+}
+
+
+
+.timer1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    font-size: 40px;
+    height: 40%;
+    border-radius: 40px;
+    background-color: rgba(245, 245, 220, 0.555);
+    padding-top: 130px;
+    padding-bottom: 140px;
+
+}
+
+
+
+.timer2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 40px;
+    width: 50%;
+    height: 40%;
+    border-radius: 40px;
+    background-color: rgba(245, 245, 220, 0.555);
+    padding-top: 130px;
+    padding-bottom: 140px;
+
+}
+
+.talk1 {
+    
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.talk2 {
+    
+    padding: 20px;
+    border-radius: 30px;
+}
+.count1 {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 10px 10px 15px black ;
+
+}
+
+.count2 {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 10px 10px 15px black ;
+
+}
+
+.count1 p {
+    
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.count2 p {
+    
+    padding: 20px;
+    border-radius: 20px;
+}
+
+
+.foot p {
+    text-align: center;
+    font-size: 35px;
+    padding-top: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+.finish {
+    font-size: 40px;
+}
+
+.finish2 {
+    font-size: 40px;
+}
+
+@media screen and (max-width:1800px) {
+    .count1 {
+        width: 80%;
+    }
+    .count2 {
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width:1500px) {
+    .nav-links {
+        width: 65%;
+    }
+
+    .join  {
+        padding: 10px 55px 10px 55px;
+    }
+
+    .talk1 {
+        font-size: 40px;
+    }
+    .count1 {
+        font-size: 40px;
+        text-align: center;
+        width: 75%;
+    
+    }
+
+    .talk2 {
+        font-size: 40px;
+    }
+    .count2 {
+        font-size: 40px;
+        width: 75%;
+    }
+
+    .foot p {
+        margin-top: -60px;
+    }
+}
+
+@media screen and (max-width:1350px) {
+    .count1 {
+        width: 85%;
+    }
+    .count2 {
+        width: 85%;
+    }
+}
+
+
+@media screen and (max-width:1200px) {
+
+    .join {
+        align-items: center;
+        margin-top: -30px;
+
+    }
+
+    .logo {
+        display: block;
+        margin-left: -35px;
+        margin-top: -10px;
+    }
+
+    .nav-links {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        height: 90%;
+        top: 4vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translate(-100%);
+        transition:  0.5s ease-in-out ;
+
+    }
+
+    .nav-links a{
+        padding: 10px 60px 10px 60px;
+        border-radius: 5px;
+    }
+
+    .nav-links a:hover {
+        background-color: black;
+    }
+    
+
+    .burger {
+        display: block;
+    }
+    .nav-links .active {
+        background-color: black;
+    }
+    .cancel {
+        display: none;
+    }
+    .cancel div:first-child{
+        transform: rotate(45deg);
+    }
+    .cancel div:last-child {
+        transform: rotate(-45deg);
+    }
+
+    .countdowndivs {
+        height: 500px;
+       text-align: center;
+    }
+
+    .timer1 {
+        font-size: 30px;
+        width: 70%;
+        padding: 20px;
+        background-color: rgba(245, 245, 220, 0.555);
+    }
+
+    .timer2 {
+        font-size: 30px;
+        width: 70%;
+        padding: 20px;
+        background-color: rgba(245, 245, 220, 0.555);
+    }
+
+    .foot p {
+        font-size: 27px;
+
+    }
+
+    .count1 {
+
+        width: 90%;
+    }
+    .count2 {
+        width: 90%;
+    }
+
+    
+
+    .finish {
+        font-size: 28px;
+    }
+
+    .finish2 {
+        font-size: 28px;
+    }
+
+    .talk1 {
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (max-width:860px) {
+
+    .timer1 {
+        width: 100%;
+
+    }
+    .timer2 {
+        width: 100%;
+
+    }
+
+    .count1 {
+        font-size: 30px;
+        width: 80%;
+
+    }
+    .count2 {
+        font-size: 30px;
+        width: 80%;
+
+    }
+  
+
+}
+
+@media screen and (max-width:500px) {
+
+    .join {
+        padding: 5px 40px 5px 40px;
+    }
+    .join a {
+        font-size: 20px;
+    }
+
+    .logo img {
+        width: 75px;
+    }
+    
+    .talk1 {
+        width: 100%;
+        font-size: 20px;
+
+    }
+
+    .talk2 {
+        width: 100%;
+        font-size: 20px;
+
+    }
+
+    .count1 {
+        width: 90%;
+        font-size: 20px;
+
+    }
+
+    .count2 {
+        width: 90%;
+        font-size: 20px;
+
+    }
+
+    .countdowndivs {
+        height: 500px;
+        margin: 0;
+
+    }
+
+    .foot p {
+        font-size: 20px;
+    }
+}
